@@ -1,0 +1,14 @@
+.icons {
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  font-size: 40px;
+  padding: 20px;
+}
+
+body {
+  padding: 30px !important;
+  background-color: var(--c-primary);
+  color: var(--c-text-color);
+}

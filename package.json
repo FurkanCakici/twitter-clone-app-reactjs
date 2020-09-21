@@ -1,0 +1,39 @@
+{
+  "name": "twitter-clone-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "yarn run build-storybook && next build",
+    "start": "next start",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook -o public/ui",
+    "icon": "svgr icons -d components/icons --icon --replace-attr-values \"#fff=currentColor\""
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "date-fns": "^2.16.1",
+    "next": "9.5.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "swr": "^0.3.2",
+    "twit": "^2.2.11"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.4",
+    "@storybook/addon-actions": "^6.0.21",
+    "@storybook/addon-essentials": "^6.0.21",
+    "@storybook/addon-knobs": "^6.0.21",
+    "@storybook/addon-links": "^6.0.21",
+    "@storybook/react": "^6.0.21",
+    "@svgr/cli": "^5.4.0",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^4.2.2",
+    "postcss-custom-media": "^7.0.8",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.2.3",
+    "prettier": "^2.1.1",
+    "react-is": "^16.13.1",
+    "style-loader": "^1.2.1"
+  }
+}
